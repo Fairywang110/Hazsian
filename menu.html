@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>亚运吉祥物与杭州文化</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<style type="text/css">
+			body{
+				width:1920px;
+    			height:1080px;
+    			display: flex;
+    			overflow: hidden;
+				/*background-color:#ddd8ab;*/
+				margin: 0;
+                padding: 0;
+            }
+            .bg{
+				align-items: center;
+				justify-content: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				/*opacity(0.5);*/
+			}
+			img{
+				max-width:100%;/*自适应*/
+				height: auto;
+				width:auto;
+				position:fixed;
+			}
+			#xh{
+				width:18%;
+				position:absolute;
+				left:43%;
+				top:50%;
+				animation: fg 3s  infinite;
+				z-index:100;
+			}
+			#xh:hover{
+				transform: scale(1.1);
+			}
+			
+			#dyh{
+				width:18%;
+				position:absolute;
+				left:73%;
+				top:30%;
+				animation: fg 3s  infinite;
+				z-index:101;
+			}
+			#dyh:hover{
+				transform: scale(1.1);
+			}
+			#lz{
+				width:18%;
+				position:absolute;
+				left:13%;
+				top:20%;
+				animation: fg 3s  infinite;
+			}
+			#lz:hover{
+				transform: scale(1.1);
+			}
+			#lx{
+				width:70%;
+				position:absolute;
+				left:17%;
+				top:43%;
+			}
+			@keyframes fg{ 
+				0%{}
+                100%{filter: drop-shadow(0px 0px 20px rgb(9, 187, 189));}
+			}
+		</style>
+	</head>
+	<body>
+		<img class="bg" src="img/nbg1.png"/>
+		<a href= "westlake.html" target="_self" title="西湖"><img id="xh" src="img/nxh.png"/></a>
+		<a href= "river.html" target="_self" title="大运河"><img id="dyh" src="img/ndyh.png"/></a>
+		<a href= "lz.html" target="_self" title="良渚"><img id="lz" src="img/nlz.png"/></a>
+		<img id="lx" src="img/nlx.png"/>
+
+	</body>
+</html>
+
+
